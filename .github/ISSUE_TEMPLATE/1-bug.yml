@@ -7,28 +7,23 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: (OPTIONAL) How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Bug Summary
+      description: At a high level, described what happened.
+      placeholder: Describe what happened...
     validations:
       required: true
-  - type: input
-    id: version
+  - type: textarea
+    id: steps-to-reproduce
     attributes:
-      label: Xee Version
-      description: What version of Xee are you running?
+      label: Steps to Reproduce
+      description: |
+        Give details that can allow others to reproduce the bug.
+        Use this [Colab template](https://colab.research.google.com/drive/1vAgfAPhKGJd4G9ZUOzciqZ7MbqJjlMLR)
+      placeholder: Describe steps in detail...
+      value: "1. Item "
     validations:
       required: true
   - type: textarea
@@ -37,6 +32,21 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Xee Version
+      description: What version of Xee are you running?
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: (OPTIONAL) How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
   - type: checkboxes
     id: terms
     attributes:
