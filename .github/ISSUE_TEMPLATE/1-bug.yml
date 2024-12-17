@@ -21,7 +21,8 @@ body:
       label: Steps to Reproduce
       description: |
         Give details that can allow others to reproduce the bug.
-        Use this [Colab template](https://colab.research.google.com/drive/1vAgfAPhKGJd4G9ZUOzciqZ7MbqJjlMLR)
+        Make a copy of this [Colab template](https://colab.research.google.com/drive/1vAgfAPhKGJd4G9ZUOzciqZ7MbqJjlMLR)
+        Be sure that any Earth Engine assets used by the script are publicly accessible.
       placeholder: Describe steps in detail...
       value: "1. Item "
     validations:
