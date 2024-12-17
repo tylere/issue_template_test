@@ -20,10 +20,25 @@ body:
     attributes:
       label: Steps to Reproduce
       description: |
-        - Create a minimal reproducible example in Colab, using this [template](https://colab.research.google.com/drive/1vAgfAPhKGJd4G9ZUOzciqZ7MbqJjlMLR)
-        - Make the notebook (and any assets used by the noteook) publicly accessible.
-        - Copy the notebook URL below.
-      placeholder: Notebook URL and/or detailed description of how to reproduce.
+        1. Create a minimal reproducible example in Colab, using this [template](https://colab.research.google.com/drive/1vAgfAPhKGJd4G9ZUOzciqZ7MbqJjlMLR).
+        2. Make the notebook publicly accessible.
+        3. Make sure that any datasets needed to reproduce the bug are publicly shared. If the datasets are sensitive and cannot be made public, replace them with other public datasets.
+        4. Copy the notebook URL below.
+      placeholder: Provide a Colab notebook URL and/or a detailed description of how to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: Describe what is currently happening.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expect to happen.
     validations:
       required: true
   - type: textarea
