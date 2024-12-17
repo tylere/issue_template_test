@@ -24,7 +24,7 @@ body:
         2. Make the notebook publicly accessible.
         3. Make sure that any datasets needed to reproduce the bug are publicly shared. If the datasets are sensitive and cannot be made public, replace them with other public datasets.
         4. Copy the notebook URL below.
-      placeholder: Provide a Colab notebook URL and/or a detailed description of how to reproduce.
+      placeholder: Provide a Colab notebook URL and/or a detailed description of how to reproduce the bug.
     validations:
       required: true
   - type: textarea
